@@ -44,7 +44,7 @@ personal_blog/
 └─ requirements.txt # Python dependencies (if using Python)
 </Detail></pre>
 
-
+link: https://roadmap.sh/projects/personal-blog
 ---
 
 ## Storage
