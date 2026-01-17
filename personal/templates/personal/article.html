@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>Article | My Blog</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <a href="{% url 'home' %}">← Back to Home</a>
+  </header>
+
+  <main>
+    <article>
+      <h2>Understanding Time Travel</h2>
+      <p><strong>Published on:</strong> 12 Jan 2026</p>
+
+      <p>
+        Time travel is not about moving clocks, but bending reality.
+        This article explores theoretical concepts behind time manipulation.
+      </p>
+    </article>
+  </main>
+</body>
+</html>

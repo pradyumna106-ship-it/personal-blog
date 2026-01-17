@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>Add Article</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Add New Article</h1>
+  </header>
+
+  <main>
+    <form>
+      <label>Title:</label><br>
+      <input type="text" name="title"><br><br>
+
+      <label>Content:</label><br>
+      <textarea name="content" rows="6"></textarea><br><br>
+
+      <label>Date of Publication:</label><br>
+      <input type="date" name="date"><br><br>
+
+      <button type="submit">Publish</button>
+    </form>
+  </main>
+</body>
+</html>

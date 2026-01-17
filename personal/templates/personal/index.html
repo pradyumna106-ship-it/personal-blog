@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog | Home</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<header>
+  <h1>My Blog</h1>
+</header>
+
+<main>
+  <h2>Published Articles</h2>
+
+  {% for article in articles %}
+    <article>
+      <h3>
+        <a href="{% url 'article' article.id %}">
+          {{ article.title }}
+        </a>
+      </h3>
+      <p>Published on: {{ article.published_date }}</p>
+    </article>
+  {% empty %}
+    <p>No articles published yet.</p>
+  {% endfor %}
+</main>
+
+<footer>
+  <p>© 2026 My Blog</p>
+</footer>
+
+</body>
+</html>

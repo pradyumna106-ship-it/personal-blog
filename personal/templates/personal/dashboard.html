@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="add-article.html">Add New Article</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Articles</h2>
+
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+
+      <tr>
+        <td>Understanding Time Travel</td>
+        <td>12 Jan 2026</td>
+        <td>
+          <a href="{% url 'edit-article' article.id %}">Edit</a> |
+          <a href="#">Delete</a>
+        </td>
+      </tr>
+    </table>
+  </main>
+</body>
+</html>

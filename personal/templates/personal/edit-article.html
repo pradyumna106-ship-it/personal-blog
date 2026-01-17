@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Article</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Edit Article</h1>
+  </header>
+
+  <main>
+    <form>
+      <label>Title:</label><br>
+      <input type="text" name="title" value="Understanding Time Travel"><br><br>
+
+      <label>Content:</label><br>
+      <textarea name="content" rows="6">
+Time travel is not about moving clocks, but bending reality.
+      </textarea><br><br>
+
+      <label>Date of Publication:</label><br>
+      <input type="date" name="date" value="2026-01-12"><br><br>
+
+      <button type="submit">Update</button>
+    </form>
+  </main>
+</body>
+</html>
